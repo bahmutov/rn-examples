@@ -17,11 +17,11 @@ module.exports = defineConfig({
     devServer: {
       framework: 'next',
       bundler: 'webpack',
-      setupNodeEvents(on, config) {
-        cypressSplit(on, config)
-        // IMPORTANT: return the config object
-        return config
-      },
+    },
+    setupNodeEvents(on, config) {
+      cypressSplit(on, config)
+      // IMPORTANT: return the config object
+      return config
     },
   },
 })

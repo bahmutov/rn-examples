@@ -7,3 +7,4 @@ jobs:
     with:
       component: true
       n: 2
+      debug: cypress-split,find-cypress-specs
