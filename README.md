@@ -1,4 +1,6 @@
-# Example app
+# rn-examples
+
+> React Native web with Cypress component tests split across multiple CI machines
 
 Next.js pages and React Native components. Provides interactive examples for the documentation website.
 
