@@ -1,4 +1,6 @@
 const { defineConfig } = require('cypress')
+// https://github.com/bahmutov/cypress-split
+const cypressSplit = require('cypress-split')
 
 module.exports = defineConfig({
   e2e: {
@@ -15,6 +17,11 @@ module.exports = defineConfig({
     devServer: {
       framework: 'next',
       bundler: 'webpack',
+      setupNodeEvents(on, config) {
+        cypressSplit(on, config)
+        // IMPORTANT: return the config object
+        return config
+      },
     },
   },
 })

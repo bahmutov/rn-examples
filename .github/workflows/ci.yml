@@ -1,0 +1,9 @@
+name: ci
+on: push
+jobs:
+  component-tests:
+    # https://github.com/bahmutov/cypress-workflows
+    uses: bahmutov/cypress-workflows/.github/workflows/split.yml@v1
+    with:
+      component: true
+      n: 2
