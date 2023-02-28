@@ -8,6 +8,8 @@ To run component tests:
 - `npm install`
 - `npx cypress open --component`
 
+Read the blog post [Split React Native Web Component Tests For Free](https://glebbahmutov.com/blog/split-react-native-component-tests/).
+
 ## Tests
 
 To see all component tests run `test-names` script which uses [find-cypress-specs](https://github.com/bahmutov/find-cypress-specs) to show all found tests in the component specs.
