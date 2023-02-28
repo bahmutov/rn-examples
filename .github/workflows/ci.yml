@@ -5,6 +5,7 @@ jobs:
     # https://github.com/bahmutov/cypress-workflows
     uses: bahmutov/cypress-workflows/.github/workflows/split.yml@v1
     with:
+      # print the test names
+      build: 'npm run test-names --silent'
       component: true
       n: 2
-      debug: cypress-split,find-cypress-specs
